@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers */
 /* betty */
-/*
+/**
  * main - print random number
  *
  *
