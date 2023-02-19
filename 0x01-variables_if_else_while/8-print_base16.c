@@ -6,13 +6,13 @@
  */
 int main(void)
 {
+char end = 'f';
+char ch = 'a';
 int n = 48;
 for (; n < 58; n++)
 {
 putchar(n);
 }
-char ch = 'a';
-char end = 'f';
 for (; ch <= end; ch++)
 {
 putchar(ch);
