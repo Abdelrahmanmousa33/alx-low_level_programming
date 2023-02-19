@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
- * *
- * main - alpha print
+/**
+ * main -alpha print
  * Return:0
  */
 int main(void)
