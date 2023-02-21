@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - Prints the lasy
- * @n: The number 
+ * @n: The number
  * Return: last digit
  */
 

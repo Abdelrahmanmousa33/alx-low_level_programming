@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * times_table - 
+ * times_table - ssa
  * Return:nothing
  */
 

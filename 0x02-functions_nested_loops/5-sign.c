@@ -2,7 +2,7 @@
 /**
  * print_sign - sign
  * @n: The number to be checked
- * Return: 1, -1 
+ * Return: 1, -1
  */
 int print_sign(int n)
 {
