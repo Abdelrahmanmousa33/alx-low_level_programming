@@ -3,7 +3,7 @@
  * print_numbers - chexk up
  * Return: 1(sucsses),0(otherwise)
  */
-int print_numbers(void)
+void print_numbers(void)
 {
 	int c;
 
