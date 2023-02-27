@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strlen - check the code
  *@s:input
@@ -5,7 +6,8 @@
  */
 int _strlen(char *s)
 {
-	int n, b;
+	int n;
+	int b;
 
 	while (s[n] != '\0')
 	{
