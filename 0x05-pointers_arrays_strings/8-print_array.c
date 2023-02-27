@@ -1,3 +1,5 @@
+#include "main.h"
+#include <stdio.h>
 /**
  * print_array - check the code for
  *@a:input
