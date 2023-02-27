@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * print_rev - check the code
  *@s:input
@@ -7,19 +7,13 @@
  */
 void print_rev(char *s)
 {
-	int n = 0, b = 0;
+	int n, i;
 
-	while (s[n] != '\0')
-	{
-		n++;
-	}
-	char *rev[n];
+	n = strlen(s);
 
-	for (; n >= b; n--)
+	for (; n >= 0 ; n--)
 	{
-		rev[b] = s[n];
-		b++;
-		_putchar(rev[b]);
+		_putchar(s[n]);
 	}
 	_putchar('\n');
 }
