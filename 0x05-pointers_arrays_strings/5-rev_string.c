@@ -11,10 +11,11 @@ void rev_string(char *s)
 
 	b = 0;
 	n = strlen(s);
+	char rev [n]
 	n--;
 	for (; n >= 0 ; n--)
 	{
-		s[b] = s[n];
+		rev[b] = s[n];
 		b++;
 	}
 	_putchar('\n');
