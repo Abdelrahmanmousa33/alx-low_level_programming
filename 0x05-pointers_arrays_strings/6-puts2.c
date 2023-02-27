@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts2 - check the code
+ * puts2 - check the code
  *@str:input
  * Return: Always 0.
  */
