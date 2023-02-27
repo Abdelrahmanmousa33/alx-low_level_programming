@@ -9,14 +9,17 @@ void rev_string(char *s)
 {
 	int n, b;
 
+	char rev = s[0];
+
 	b = 0;
 	n = strlen(s);
-	char rev [n]
-	n--;
-	for (; n >= 0 ; n--)
+	n++;
+	for (; b < n ; b++)
 	{
-		rev[b] = s[n];
-		b++;
+		n--;
+		rev = s[b];
+		s[b] = s[n];
+		s[n] = rev;
 	}
 	_putchar('\n');
 }
