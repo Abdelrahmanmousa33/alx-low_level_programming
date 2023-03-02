@@ -9,11 +9,14 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int c;
+	int c = 0;
 
-	while (s1[c] = s2[c])
+	while (s1[c] == s2[c])
 	{
+		if (s1[c] == '\0' || s1[c] == '\0')
+			break;
 		c++;
+
 	}
 	if (s1[c] > s2[c])
 		return (1);
