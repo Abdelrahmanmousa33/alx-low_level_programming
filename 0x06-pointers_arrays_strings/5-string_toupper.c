@@ -13,7 +13,7 @@ char *string_toupper(char *ptr)
 	{
 		if (ptr[i] >= 65 && ptr[i] <= 90)
 		{
-			ptr[i] = ptr[i] + 32;
+			ptr[i] = ptr[i] - 32;
 		}
 		i++;
 	}
