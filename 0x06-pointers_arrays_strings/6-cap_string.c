@@ -26,12 +26,15 @@ char *cap_string(char *ptr)
 			ptr[i - 1] == '(' ||
 			ptr[i - 1] == ')' ||
 			ptr[i - 1] == '{' ||
-			ptr[i - 1] == '}')
+			ptr[i - 1] == '}' ||
+			i == 0)
 			{
-				ptr[i] -= 32;
+				ptr[i] = ptr[i] - 32;
 			}
 		}
 		i++;
-}
+
+	}
+	return (ptr);
 }
 
