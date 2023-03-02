@@ -10,17 +10,13 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int d ,s, c;
+	int n;
 
+	char *ptr = &dest[0];
 
-	d = strlen(dest);
-	s = strlen(src);
-	for (c = 0; c <= s;c++)
-	{
-		dest[d+c] = src[c];
-	}
-
-	return (dest);
+	n = strlen(dest);
+	dest[n] = *src;
+	return (ptr);
 
 
 }
