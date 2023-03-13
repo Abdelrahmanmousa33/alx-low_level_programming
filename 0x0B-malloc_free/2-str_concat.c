@@ -13,14 +13,24 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
-
+	int i = 0 ,c = 0;
 	if (s1 == NULL)
 		strcpy(s1, "");
 	if (s2 == NULL)
 		strcpy(s1, "");
 	ptr = (char *)malloc(sizeof(char) * (strlen(s1) + 1)
 			+ sizeof(char) * (strlen(s2) + 1));
-	strcat(ptr, s1);
-	strcat(ptr, s2);
+	if (ptr == NULL)
+		return (NULL);
+	while (s1[i] != '\0')
+	{
+		ptr[i] = s1[i];
+		i++;
+	}
+	while (s2[c] != '\0')
+	{
+		ptr[i+c] = s2[c];
+		c++;
+	}
 	return (ptr);
 }
