@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	}
 	for (c = 0; c < argc; c++)
 	{
-	if (atoi(argv[c]) >= 48 || atoi(argv[c]) <= 57)
+	if (atoi(argv[c]) >= 48 && atoi(argv[c]) <= 57)
 	{
 	sum = sum + atoi(argv[c]);
 	}
