@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - print its number of arguments folowed by a new line
  *@argc:number of parameters
@@ -7,13 +8,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int a = (int)argv[1];
-		printf("%d\n", a);
+	int ai, bi;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	printf("%d\n", *argv[1] * *argv[2]);
+	ai = atoi(argv[1]);
+	bi = atoi(argv[2]);
+	printf("%d\n", ai * bi);
 	return (0);
 }
