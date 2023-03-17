@@ -16,8 +16,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *ptr;
 	size_t c;
 
-	if (s1 == NULL)
+	if (s1 == 0)
+	{
 		s1 = "";
+	}
 	if (s2 == NULL)
 		s2 = "";
 	if (strlen(s2) <= n)
@@ -26,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (ptr == NULL)
 		return (NULL);
 	strcpy(ptr, s1);
-	for (c = strlen(s1); c <= strlen(s1) + n; c++)
+	for (c = strlen(s1); c < strlen(s1) + n; c++)
 	{
 		ptr[c] = s2[c - strlen(s1)];
 	}
