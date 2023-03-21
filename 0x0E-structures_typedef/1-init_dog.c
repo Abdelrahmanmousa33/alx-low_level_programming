@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * init_dog - a funcation that initialize a var of type dog
