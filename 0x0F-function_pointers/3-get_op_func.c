@@ -16,14 +16,10 @@ op_t ops[] = {
 	{NULL, NULL}
 	};
 	int i = 0;
-
-	while (i < 6)
-	{
-		if (*s == *(ops[i].op))
-		{
-			return (ops[i].f);
-		}
+	
+	while (*s != *(ops[i].op) && ops[i].op != NULL)
 		i++;
-	}
-	return (NULL);
+
+
+	return (ops[i].f);
 }
