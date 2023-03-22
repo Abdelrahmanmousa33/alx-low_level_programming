@@ -1,6 +1,6 @@
 #include <stdio.h>
-#ifndef function_pointers_h
-#define function_pointers_h
+#ifndef FUNCTION_POINTERS_H
+#define FUNCTION_POINTERS_H
 #endif
 /**
  * print_name - prints a name
@@ -11,6 +11,8 @@
 void print_name(char *name, void (*f)(char *))
 {
 	if (name == NULL)
+		return;
+	if (f == NULL)
 		return;
 	(f)(name);
 }
