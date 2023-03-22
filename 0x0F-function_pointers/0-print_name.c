@@ -1,7 +1,5 @@
 #include <stdio.h>
-#ifndef FUNCTION_POINTERS_H
-#define FUNCTION_POINTERS_H
-#endif
+#include "function_pointers.h"
 /**
  * print_name - prints a name
  * @name: name of the person
