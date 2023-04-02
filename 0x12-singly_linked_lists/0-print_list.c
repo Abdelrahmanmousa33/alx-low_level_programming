@@ -12,7 +12,7 @@ size_t print_list(const list_t *h)
 {
 	size_t nodesCount = 0;
 
-	for (;;)
+	for (; h != NULL;)
 	{
 	nodesCount++;
 	if (h->str == NULL)
