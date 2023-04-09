@@ -8,12 +8,20 @@ unsigned int power(unsigned int i, unsigned int p);
  */
 void print_binary(unsigned long int n)
 {
-	int i = 0;
-	unsigned long int temp = 0;
+	int i = 0, count = 0;
+	unsigned long int  temp;
 
-	for (i = 31;i >= 0;i--)
+	for (i = 63; i >= 0; i--)
 	{
-		temp = (n>>i) & 1;
-		_putchar((char) temp);
+		temp = (n >> i) & 1;
+		if ((temp & 1) == 1)
+		{
+			_putchar('1');
+			count++;
+		}
+		else if (count != 0)
+			_putchar('0');
 	}
+	if (count == 0)
+		_putchar('0');
 }
