@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <fcntl.h>
 #include "main.h"
 
 /**
@@ -11,15 +12,15 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fp = fopen(filename, "r");
+	ssize_t fp = open(filename, O_RDONLY);
 	char *buff = malloc(sizeof(char) * letters);
 	size_t lettersred = 0;
 
 	if (fp == -1)
 		return (0);
-	lettersred += read(1, buff, letters);
+	lettersred += read(fp, buff, letters);
 	dprintf(1, "%s", buff);
-	fclose(fp);
+	close(fp);
 	free(buff);
 	return (lettersred);
 }
