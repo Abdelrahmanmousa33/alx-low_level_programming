@@ -13,6 +13,7 @@ if (h == NULL)
 while (h != NULL)
 {
 	nodes_count++;
+	h = h->next;
 }
 return (nodes_count);
 }
