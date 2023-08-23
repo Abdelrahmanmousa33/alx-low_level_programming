@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+""" Island parameter problem"""
+
 
 def island_perimeter(grid):
+    """calculates an island parameter in a grid"""
     height = len(grid)
     width = len(grid[0])
     perimeter = 0
